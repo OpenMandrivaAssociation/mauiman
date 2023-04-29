@@ -1,16 +1,16 @@
 %define major 0
 
-%define libname %mklibname %{name} %{major}
+%define libname %mklibname %{name}
 %define devname %mklibname %{name} -d
 
 Summary:	Maui Manager Library
 Name:		mauiman
-Version:	1.0.0
+Version:	1.0.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv3
 Url:		http://mauikit.org/
-Source0:	https://download.kde.org/stable/maui/%{name}/%{version}/%{name}-%{version}.tar.xz
+Source0:	https://invent.kde.org/maui/mauiman/-/archive/v%{version}/mauiman-v%{version}.tar.bz2
 
 BuildRequires:	extra-cmake-modules
 BuildRequires:	pkgconfig(Qt5Core)
@@ -59,7 +59,7 @@ Development files for MauiMan
 
 %build
 %cmake_kde5
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
