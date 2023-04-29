@@ -55,7 +55,7 @@ Development files for MauiMan
 #--------------------------------------------
 
 %prep
-%autosetup -p1
+%autosetup %{name}-v{version} -p1
 
 %build
 %cmake_kde5
