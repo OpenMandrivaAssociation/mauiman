@@ -15,6 +15,7 @@ Source0:	https://invent.kde.org/maui/mauiman/-/archive/v%{version}/mauiman-v%{ve
 BuildRequires:  appstream
 BuildRequires:  cmake
 BuildRequires:	extra-cmake-modules
+BuildRequires:	ninja
 BuildRequires:  cmake(Qt5SystemInfo)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5DBus)
@@ -60,9 +61,10 @@ Development files for MauiMan
 %prep
 %autosetup -n %{name}-v%{version} -p1
 
+%cmake_kde5 -G Ninja
+
 %build
-%cmake_kde5
-%make_build
+%ninja_build -C build
 
 %install
-%make_install -C build
+%ninja_install -C build
