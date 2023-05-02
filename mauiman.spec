@@ -38,7 +38,7 @@ Requires:	%{name} = %{EVRD}
 Library files for MauiMan.
 
 %files -n %{libname}
-%{_kde5_libdir}/libMauiMan.so.%{major}*
+#{_kde5_libdir}/libMauiMan.so.%{major}*
 
 #--------------------------------------------
 
