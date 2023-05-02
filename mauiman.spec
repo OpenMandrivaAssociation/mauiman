@@ -12,7 +12,9 @@ License:	GPLv3
 Url:		http://mauikit.org/
 Source0:	https://invent.kde.org/maui/mauiman/-/archive/v%{version}/mauiman-v%{version}.tar.bz2
 
+BuildRequires:  cmake
 BuildRequires:	extra-cmake-modules
+BuildRequires:  cmake(Qt5SystemInfo)
 BuildRequires:	pkgconfig(Qt5Core)
 BuildRequires:	pkgconfig(Qt5DBus)
 Requires:	%{libname} = %{EVRD}
