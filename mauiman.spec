@@ -1,4 +1,4 @@
-%define major 0
+%define major 3
 
 #define libname %mklibname %{name}
 %define devname %mklibname %{name} -d
@@ -9,7 +9,7 @@ Version:	3.0.2
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv3
-Url:		http://mauikit.org/
+Url:		https://mauikit.org/
 Source0:	https://invent.kde.org/maui/mauiman/-/archive/v%{version}/mauiman-v%{version}.tar.bz2
 
 BuildRequires:  appstream
@@ -24,9 +24,9 @@ BuildRequires:	pkgconfig(Qt5DBus)
 Maui Manager Library.
 
 %files
-#{_kde5_bindir}/MauiManServer
-#{_datadir}/dbus-1/services/org.mauiman.Manager.service
-#{_kde5_libdir}/libMauiMan.so
+%{_bindir}/MauiManServer%{major}
+%{_libdir}/libMauiMan%{major}.so
+%{_datadir}/dbus-1/services/org.mauiman.Manager%{major}.service
 
 #--------------------------------------------
 
@@ -40,8 +40,8 @@ Provides:   %{name}-devel = %{EVRD}
 Development files for MauiMan
 
 %files -n %{devname}
-#{_includedir}/MauiMan
-#{_kde5_libdir}/cmake/MauiMan
+%{_includedir}/MauiMan%{major}/
+%{_libdir}/cmake/MauiMan3/
 
 #--------------------------------------------
 
