@@ -24,9 +24,9 @@ BuildRequires:	pkgconfig(Qt5DBus)
 Maui Manager Library.
 
 %files
-%{_kde5_bindir}/MauiManServer
-%{_datadir}/dbus-1/services/org.mauiman.Manager.service
-%{_kde5_libdir}/libMauiMan.so
+#{_kde5_bindir}/MauiManServer
+#{_datadir}/dbus-1/services/org.mauiman.Manager.service
+#{_kde5_libdir}/libMauiMan.so
 
 #--------------------------------------------
 
