@@ -40,8 +40,8 @@ Provides:   %{name}-devel = %{EVRD}
 Development files for MauiMan
 
 %files -n %{devname}
-%{_includedir}/MauiMan
-%{_kde5_libdir}/cmake/MauiMan
+#{_includedir}/MauiMan
+#{_kde5_libdir}/cmake/MauiMan
 
 #--------------------------------------------
 
