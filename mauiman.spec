@@ -25,7 +25,7 @@ Maui Manager Library.
 
 %files
 %{_bindir}/MauiManServer%{major}
-%{_libdir}/libMauiMan%{major}.so
+%{_libdir}/libMauiMan%{major}.so*
 %{_datadir}/dbus-1/services/org.mauiman.Manager%{major}.service
 
 #--------------------------------------------
