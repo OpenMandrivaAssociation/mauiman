@@ -5,7 +5,7 @@
 
 Summary:	Maui Manager Library
 Name:		mauiman
-Version:	3.1.0
+Version:	4.0.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv3
@@ -16,9 +16,8 @@ BuildRequires:  appstream
 BuildRequires:  cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	ninja
-BuildRequires:  cmake(Qt5SystemInfo)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt6Core)
+BuildRequires:	pkgconfig(Qt6DBus)
 
 %description
 Maui Manager Library.
