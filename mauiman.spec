@@ -1,4 +1,4 @@
-%define major 3
+%define major 4
 
 #define libname %mklibname %{name}
 %define devname %mklibname %{name} -d
@@ -41,7 +41,7 @@ Development files for MauiMan
 
 %files -n %{devname}
 %{_includedir}/MauiMan%{major}/
-%{_libdir}/cmake/MauiMan3/
+%{_libdir}/cmake/MauiMan4/
 
 #--------------------------------------------
 
