@@ -18,6 +18,7 @@ BuildRequires:	extra-cmake-modules
 BuildRequires:	ninja
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6DBus)
+BuildRequires:	pkgconfig(Qt6Gui)
 
 %description
 Maui Manager Library.
