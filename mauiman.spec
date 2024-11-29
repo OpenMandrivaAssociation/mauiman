@@ -1,11 +1,11 @@
-%define major 3
+%define major 4
 
 #define libname %mklibname %{name}
 %define devname %mklibname %{name} -d
 
 Summary:	Maui Manager Library
 Name:		mauiman
-Version:	3.1.0
+Version:	4.0.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv3
@@ -16,16 +16,16 @@ BuildRequires:  appstream
 BuildRequires:  cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	ninja
-BuildRequires:  cmake(Qt5SystemInfo)
-BuildRequires:	pkgconfig(Qt5Core)
-BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt6Core)
+BuildRequires:	pkgconfig(Qt6DBus)
+BuildRequires:	pkgconfig(Qt6Gui)
 
 %description
 Maui Manager Library.
 
 %files
 %{_bindir}/MauiManServer%{major}
-%{_libdir}/libMauiMan%{major}.so
+%{_libdir}/libMauiMan%{major}.so*
 %{_datadir}/dbus-1/services/org.mauiman.Manager%{major}.service
 
 #--------------------------------------------
@@ -41,7 +41,7 @@ Development files for MauiMan
 
 %files -n %{devname}
 %{_includedir}/MauiMan%{major}/
-%{_libdir}/cmake/MauiMan3/
+%{_libdir}/cmake/MauiMan4/
 
 #--------------------------------------------
 
