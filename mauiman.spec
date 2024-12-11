@@ -5,7 +5,7 @@
 
 Summary:	Maui Manager Library
 Name:		mauiman
-Version:	4.0.0
+Version:	4.0.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv3
